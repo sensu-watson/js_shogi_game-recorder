@@ -1,0 +1,19 @@
+.app-shell-board {
+	position : absolute;
+	top      : 0px;
+	left     : 0px;
+	
+	height   : 840px;
+	width    : 580px;
+}
+
+.app-shell-operate {
+	position : absolute;
+	top      : 0px;
+	left     : 580px;
+	
+	height   : 840px;
+	width    : 300px;
+	
+	background-color : #eeeeee;
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>将棋</title>
+		
+		<!-- スタイルシート -->
+		<link rel="stylesheet" href="css/app.css">
+		<link rel="stylesheet" href="css/app.shell.css">
+		<link rel="stylesheet" href="css/app.board.css">
+		<link rel="stylesheet" href="css/app.operate.css">
+		
+		<link rel="stylesheet" href="css/app.piece.css">
+		
+		<!-- サードパーティ javascript -->
+		<script src="js/jquery-1.11.2.min.js"></script>
+		
+		<!-- javascript -->
+		<script src="js/app.js"></script>
+		<script src="js/app.data.js"></script>
+		<script src="js/app.shell.js"></script>
+		<script src="js/app.board.js"></script>
+		<script src="js/app.operate.js"></script>
+		<script>
+			$(function(){
+				app.initModule($('#app'));
+			});
+		</script>
+	</head>
+	<body>
+		<div id="app"></div>
+	</body>
+</html>

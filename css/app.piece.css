@@ -1,0 +1,117 @@
+.app-pieces {
+	position : absolute;
+	top      : 22px;
+	left     : 18px;
+	
+	height : 576px;
+	width  : 531px;
+}
+
+.app-piece {
+	position : relative;
+	
+	width  : 59px;
+	height : 64px;
+	
+	float : right;
+}
+
+.app-stand-piece {
+	position : relative;
+	
+	width  : 59px;
+	height : 64px;
+	
+	float : right;
+}
+
+.space-stand{
+	position : relative;
+	
+	width  : 19px;
+	height : 64px;
+	
+	float : right;
+}
+
+.app-stand-reverse {
+	position : relative;
+	
+	width  : 59px;
+	height : 64px;
+	
+	background-position : right bottom;
+	
+	text-align : right;
+	float : right;
+}
+
+.app-piece-pawn{
+  background-image: url("../img/fu.png");
+  background-repeat : no-repeat;
+}
+
+.app-piece-lance{
+  background-image: url("../img/kyou.png");
+  background-repeat : no-repeat;
+}
+
+.app-piece-knight{
+  background-image: url("../img/kei.png");
+  background-repeat : no-repeat;
+}
+
+.app-piece-silver{
+  background-image: url("../img/gin.png");
+  background-repeat : no-repeat;
+}
+
+.app-piece-gold{
+  background-image: url("../img/kin.png");
+  background-repeat : no-repeat;
+}
+
+.app-piece-bishop{
+  background-image: url("../img/kaku.png");
+  background-repeat : no-repeat;
+}
+
+.app-piece-rook{
+  background-image: url("../img/hi.png");
+  background-repeat : no-repeat;
+}
+
+.app-piece-king{
+  background-image: url("../img/ou.png");
+  background-repeat : no-repeat;
+}
+
+.app-piece-p_pawn{
+  background-image: url("../img/to.png");
+  background-repeat : no-repeat;
+}
+
+.app-piece-p_lance{
+  background-image: url("../img/narikyou.png");
+  background-repeat : no-repeat;
+}
+
+.app-piece-p_knight{
+  background-image: url("../img/narikei.png");
+  background-repeat : no-repeat;
+}
+
+.app-piece-p_silver{
+  background-image: url("../img/narigin.png");
+  background-repeat : no-repeat;
+}
+
+.app-piece-p_bishop{
+  background-image: url("../img/uma.png");
+  background-repeat : no-repeat;
+}
+
+.app-piece-p_rook{
+  background-image: url("../img/ryu.png");
+  background-repeat : no-repeat;
+}

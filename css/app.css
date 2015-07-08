@@ -1,0 +1,23 @@
+body {
+	background-color : #cccccc;
+}
+
+/* app名前空間セレクタ開始 */
+#app {
+	position : absolute;
+	top      : 8px;
+	left     : 8px;
+	
+	height   : 840px;
+	width    : 880px;
+	overflow : hidden;
+	
+	background-color : #ffffff;
+}
+/* app名前空間セレクタ終了 */
+
+/* ユーティリティセレクタ開始 */
+.app-x-reverse{
+	transform : rotate(180deg);
+}
+/* ユーティリティセレクタ終了 */

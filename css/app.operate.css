@@ -1,0 +1,54 @@
+.app-operate-menu {
+	position : absolute;
+	top      : 0px;
+	left     : 0px;
+	
+	height   : 520px;
+	width    : 300px;
+}
+
+.app-normalbutton {
+	height   : 50px;
+	width    : 80px;
+	
+	background-color : #ffffff;
+	border : 1px solid #666666;
+	
+	text-align  : center;
+	line-height : 50px;
+	
+	
+	cursor : pointer;
+}
+
+.app-operate-record {
+	position : absolute;
+	top      : 520px;
+	left     : 0px;
+	
+	height   : 320px;
+	width    : 300px;
+}
+
+.app-operate-record-kif {
+	position : absolute;
+	top      : 10px;
+	left     : 10px;
+	
+	height   : 180px;
+	width    : 160px;
+	
+	background-color : #ffffff;
+	border : 1px solid #666666;
+	
+	list-style-type : none;
+	overflow        : scroll;
+	
+	margin : 0px;
+	padding : 0px;
+}
+
+.app-operate-record-kif > li {
+	padding : 0px;
+	margin  : 0px;
+}

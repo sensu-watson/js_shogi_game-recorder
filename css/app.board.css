@@ -1,0 +1,71 @@
+.app-board {
+	position : absolute;
+	top    : 10px;
+	left   : 7px;
+	
+	width  : 567px;
+	height : 960px;
+	
+	background-color : #ffffff;
+}
+
+.app-board-opposite_move {
+	position : absolute;
+	top    : 0px;
+	left   : 0px;
+	
+	width  : 567px;
+	height : 20px;
+	
+	line-height : 20px;
+	text-align  : center;
+	
+	background-color : #eeeeee;
+}
+
+.app-board-opposite_stand {
+	position : absolute;
+	top      : 20px;
+	left     : 0px;
+	
+	width  : 567px;
+	height : 80px;
+	
+	background-color : #ffffff;
+}
+
+.app-board-feel {
+	position : absolute;
+	top      : 100px;
+	left     : 0px;
+	
+	width  : 567px;
+	height : 620px;
+	
+	background-image: url("../img/board.png");
+}
+
+.app-board-near_stand {
+	position : absolute;
+	top    : 720px;
+	left   : 0px;
+	
+	width  : 567px;
+	height : 80px;
+	
+	background-color : #ffffff;
+}
+
+.app-board-near_move {
+	position : absolute;
+	top    : 800px;
+	left   : 0px;
+	
+	width  : 567px;
+	height : 20px;
+	
+	line-height : 20px;
+	text-align  : center;
+	
+	background-color : #eeeeee;
+}
