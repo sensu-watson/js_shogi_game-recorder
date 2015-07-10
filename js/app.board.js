@@ -1,10 +1,10 @@
 app.board = (function(){
-	// ----------ƒ‚ƒWƒ…[ƒ‹ƒXƒR[ƒv•Ï”ŠJn----------
+	// ----------ãƒ¢ã‚¸ãƒ¥ãƒ¼ãƒ«ã‚¹ã‚³ãƒ¼ãƒ—å¤‰æ•°é–‹å§‹----------
 	var
 		configMap = {
 			main_html : String()
 				+ '<div class="app-board">'
-					+ '<div class="app-board-opposite_move">Œãè</div>'
+					+ '<div class="app-board-opposite_move">å¾Œæ‰‹</div>'
 					+ '<div class="app-board-opposite_stand">'
 						+ '<div class="app-stand-piece app-piece-pawn app-stand-reverse app-x-reverse"></div>'
 							+ '<div class="space-stand"></div>'
@@ -121,7 +121,7 @@ app.board = (function(){
 						+ '<div class="app-stand-piece app-piece-rook"></div>'
 							+ '<div class="space-stand"></div>'
 					+ '</div>'
-					+ '<div class="app-board-near_move">æè</div>'
+					+ '<div class="app-board-near_move">å…ˆæ‰‹</div>'
 				+ '</div>',
 			piece_number : {
 					NONE        : 0,
@@ -165,9 +165,9 @@ app.board = (function(){
 		jqueryMap = {},
 		
 		setJqueryMap, initModule;
-	// ----------ƒ‚ƒWƒ…[ƒ‹ƒXƒR[ƒv•Ï”I—¹----------
-	// ----------ƒ†[ƒeƒBƒŠƒeƒBƒƒ\ƒbƒhŠJn----------
-	// /bindClickPiece/ŠJn
+	// ----------ãƒ¢ã‚¸ãƒ¥ãƒ¼ãƒ«ã‚¹ã‚³ãƒ¼ãƒ—å¤‰æ•°çµ‚äº†----------
+	// ----------ãƒ¦ãƒ¼ãƒ†ã‚£ãƒªãƒ†ã‚£ãƒ¡ã‚½ãƒƒãƒ‰é–‹å§‹----------
+	// /bindClickPiece/é–‹å§‹
 	bindClickPiece = function(){
 		for (var i = 0; i < 9; i++){
 			for (var j = 0; j < 9; j++){
@@ -191,9 +191,9 @@ app.board = (function(){
 		jqueryMap.$near_bishop.click(onClickStandPiece);
 		jqueryMap.$near_rook.click(onClickStandPiece);
 	}
-	// /bindClickPiece/I—¹
+	// /bindClickPiece/çµ‚äº†
 	
-	// /unbindClickPiece/ŠJn
+	// /unbindClickPiece/é–‹å§‹
 	unbindClickPiece = function(){
 		for (var i = 0; i < 9; i++){
 			for (var j = 0; j < 9; j++){
@@ -217,9 +217,9 @@ app.board = (function(){
 		jqueryMap.$near_bishop.unbind();
 		jqueryMap.$near_rook.unbind();
 	}
-	// /unbindClickPiece/I—¹
+	// /unbindClickPiece/çµ‚äº†
 	
-	// /makeBoard/ŠJn
+	// /makeBoard/é–‹å§‹
 	makeBoard = function(){
 		var
 			recordMap    = stateMap.recordMap,
@@ -488,9 +488,9 @@ app.board = (function(){
 			$opposite_rook.html(recordMap.op_stand[6]);
 		}
 	}
-	// /makeBoard/I—¹
+	// /makeBoard/çµ‚äº†
 	
-	// /canPickPiece/ŠJn
+	// /canPickPiece/é–‹å§‹
 	canPickPiece = function($pickPiece){
 		if (
 			$pickPiece.attr('class') === 'app-piece' ||
@@ -509,9 +509,9 @@ app.board = (function(){
 			return true;
 		}
 	}
-	// /canPickPiece/I—¹
+	// /canPickPiece/çµ‚äº†
 	
-	// /canMovePiece/ŠJn
+	// /canMovePiece/é–‹å§‹
 	canMovePiece = function(pickX, pickY, moveX, moveY){
 		var
 			piece_number = configMap.piece_number,
@@ -1133,9 +1133,9 @@ app.board = (function(){
 		}
 		return false;
 	}
-	// /canMovePiece/I—¹
+	// /canMovePiece/çµ‚äº†
 	
-	// /whatKindPiece/ŠJn
+	// /whatKindPiece/é–‹å§‹
 	whatKindPiece = function(moveX, moveY){
 		var
 			piece_number = configMap.piece_number,
@@ -1203,9 +1203,9 @@ app.board = (function(){
 				break;
 		}
 	}
-	// /whatKinePiece/I—¹
+	// /whatKinePiece/çµ‚äº†
 	
-	// /isNearPiece/ŠJn
+	// /isNearPiece/é–‹å§‹
 	isNearPiece = function(ID){
 		if (0 < ID && ID < 20){
 			return true;
@@ -1214,9 +1214,9 @@ app.board = (function(){
 			return false;
 		}
 	}
-	// /isNearPiece/I—¹
+	// /isNearPiece/çµ‚äº†
 	
-	// /isOppositePiece/ŠJn
+	// /isOppositePiece/é–‹å§‹
 	isOppositePiece = function(ID){
 		if (20 < ID){
 			return true;
@@ -1225,9 +1225,9 @@ app.board = (function(){
 			return false;
 		}
 	}
-	// /isOppositePiece/I—¹
+	// /isOppositePiece/çµ‚äº†
 	
-	// /isPromotePiece/ŠJn
+	// /isPromotePiece/é–‹å§‹
 	isPromotePiece = function(pickY, moveY, pieceID){
 		var
 			piece_number = configMap.piece_number;
@@ -1254,7 +1254,7 @@ app.board = (function(){
 			return true;
 		}
 		else if(isNearPiece(pieceID) && moveY < 4){
-			if (confirm('¬‚è‚Ü‚·‚©?')){
+			if (confirm('æˆã‚Šã¾ã™ã‹?')){
 				return true;
 			}
 			else {
@@ -1262,7 +1262,7 @@ app.board = (function(){
 			}
 		}
 		else if(isOppositePiece(pieceID) && moveY > 6){
-			if (confirm('¬‚è‚Ü‚·‚©?')){
+			if (confirm('æˆã‚Šã¾ã™ã‹?')){
 				return true;
 			}
 			else {
@@ -1273,9 +1273,9 @@ app.board = (function(){
 			return false;
 		}
 	}
-	// /isPromotePiece/I—¹
+	// /isPromotePiece/çµ‚äº†
 	
-	// /checkNifu/ŠJn
+	// /checkNifu/é–‹å§‹
 	checkNifu = function(moveX){
 		var recordMap = stateMap.recordMap;
 		
@@ -1291,11 +1291,11 @@ app.board = (function(){
 			return true;
 		}
 	}
-	// /checkNifu/I—¹
+	// /checkNifu/çµ‚äº†
 	
-	// ----------ƒ†[ƒeƒBƒŠƒeƒBƒƒ\ƒbƒhI—¹----------
-	// ----------DOMƒƒ\ƒbƒhŠJn---------------------
-	// /setJqueryMap/ŠJn
+	// ----------ãƒ¦ãƒ¼ãƒ†ã‚£ãƒªãƒ†ã‚£ãƒ¡ã‚½ãƒƒãƒ‰çµ‚äº†----------
+	// ----------DOMãƒ¡ã‚½ãƒƒãƒ‰é–‹å§‹---------------------
+	// /setJqueryMap/é–‹å§‹
 	setJqueryMap = function(){
 		var
 			$container       = stateMap.$container,
@@ -1358,10 +1358,10 @@ app.board = (function(){
 			$piece               : $piece
 		};
 	};
-	// /setJqueryMap/I—¹
-	// ----------DOMƒƒ\ƒbƒhI—¹---------------------
-	// ----------ƒCƒxƒ“ƒgƒnƒ“ƒhƒ‰ŠJn----------------
-	// /onClickPiece/ŠJn
+	// /setJqueryMap/çµ‚äº†
+	// ----------DOMãƒ¡ã‚½ãƒƒãƒ‰çµ‚äº†---------------------
+	// ----------ã‚¤ãƒ™ãƒ³ãƒˆãƒãƒ³ãƒ‰ãƒ©é–‹å§‹----------------
+	// /onClickPiece/é–‹å§‹
 	onClickPiece = function(){
 		var 
 			classes,
@@ -1373,7 +1373,7 @@ app.board = (function(){
 			piece_number = configMap.piece_number,
 			$clickPiece = $(this);
 		
-		if (stateMap.$selected_piece === null){		// ‹î‚ğ’Í‚Ş
+		if (stateMap.$selected_piece === null){		// é§’ã‚’æ´ã‚€
 			if (! canPickPiece($clickPiece)){
 				return;
 			}
@@ -1383,7 +1383,7 @@ app.board = (function(){
 			stateMap.select_number = $('.app-pieces > .app-piece').index(this);
 			stateMap.select_stand = false;
 		}
-		else {										// ’…è
+		else {										// ç€æ‰‹
 			number = $('.app-pieces > .app-piece').index(this);
 			moveY = Math.floor(number / 9) + 1;
 			moveX = number % 9 + 1;
@@ -1391,36 +1391,36 @@ app.board = (function(){
 			pickX = select_number % 9 + 1;
 			pickpiece_number = stateMap.recordMap.board[pickY][pickX]
 			
-			if ((stateMap.select_stand && checkNifu(moveX)) || canMovePiece(pickX, pickY, moveX, moveY)){		// ‹î‘ä‚©‚ç‹î‚ğ‘Å‚¿A‚©‚Â‚»‚ê‚ª“ñ•à‚Å‚Í‚È‚¢B‚à‚µ‚­‚Íw’èæ‚É‹î‚ª“®‚©‚¹‚éê‡B
+			if ((stateMap.select_stand && checkNifu(moveX)) || canMovePiece(pickX, pickY, moveX, moveY)){		// é§’å°ã‹ã‚‰é§’ã‚’æ‰“ã¡ã€ã‹ã¤ãã‚ŒãŒäºŒæ­©ã§ã¯ãªã„ã€‚ã‚‚ã—ãã¯æŒ‡å®šå…ˆã«é§’ãŒå‹•ã‹ã›ã‚‹å ´åˆã€‚
 				stateMap.$selected_piece.css('background-color', '');
 				
-				if (recordMap.board[moveY][moveX] !== 0){	// ˆÚ“®æ‚É‹î‚ª‚ ‚Á‚½ê‡
-					if (recordMap.board[moveY][moveX] === piece_number.NE_KING || recordMap.board[moveY][moveX] === piece_number.OP_KING){	// ‰¤«‚ğæ‚Á‚½ê‡
+				if (recordMap.board[moveY][moveX] !== 0){	// ç§»å‹•å…ˆã«é§’ãŒã‚ã£ãŸå ´åˆ
+					if (recordMap.board[moveY][moveX] === piece_number.NE_KING || recordMap.board[moveY][moveX] === piece_number.OP_KING){	// ç‹å°†ã‚’å–ã£ãŸå ´åˆ
 						unbindClickPiece();
 					}
-					else if (recordMap.teban === 1){		// Œãè‚Ì‹î‚ğæ‚Á‚½ê‡
+					else if (recordMap.teban === 1){		// å¾Œæ‰‹ã®é§’ã‚’å–ã£ãŸå ´åˆ
 						recordMap.ns_stand[(recordMap.board[moveY][moveX] - 20) % 8 - 1]++;
 					}
-					else {									// æè‚Ì‹î‚ğæ‚Á‚½ê‡
+					else {									// å…ˆæ‰‹ã®é§’ã‚’å–ã£ãŸå ´åˆ
 						recordMap.op_stand[recordMap.board[moveY][moveX] % 8 - 1]++;
 					}
 				}
 				
-				if (stateMap.select_stand){					// ‹î‘ä‚©‚ç‹î‚ğ‘Å‚Á‚½ê‡
-					if (recordMap.teban === 1){					// æè”Ô
+				if (stateMap.select_stand){					// é§’å°ã‹ã‚‰é§’ã‚’æ‰“ã£ãŸå ´åˆ
+					if (recordMap.teban === 1){					// å…ˆæ‰‹ç•ª
 						recordMap.board[moveY][moveX] = stateMap.select_number + 1;
 						recordMap.ns_stand[stateMap.select_number]--;
 					}
-					else {										// Œãè”Ô
+					else {										// å¾Œæ‰‹ç•ª
 						recordMap.board[moveY][moveX] = stateMap.select_number + 21;
 						recordMap.op_stand[stateMap.select_number]--;
 					}
 				}
-				else {										// ”Õã‚Ì‹î‚ğ“®‚©‚µ‚½ê‡
-					if (isPromotePiece(pickY, moveY, stateMap.recordMap.board[pickY][pickX])){		// ¬‚è
+				else {										// ç›¤ä¸Šã®é§’ã‚’å‹•ã‹ã—ãŸå ´åˆ
+					if (isPromotePiece(pickY, moveY, stateMap.recordMap.board[pickY][pickX])){		// æˆã‚Š
 						recordMap.board[moveY][moveX] = stateMap.recordMap.board[pickY][pickX] + 8;
 					}
-					else {																			// •s¬
+					else {																			// ä¸æˆ
 						recordMap.board[moveY][moveX] = stateMap.recordMap.board[pickY][pickX];
 					}
 					recordMap.board[pickY][pickX] = 0;
@@ -1459,9 +1459,9 @@ app.board = (function(){
 			}
 		}
 	}
-	// /onClickPiece/I—¹
+	// /onClickPiece/çµ‚äº†
 	
-	// /onClickStandPiece/ŠJn
+	// /onClickStandPiece/é–‹å§‹
 	onClickStandPiece = function(){
 		var 
 			classes,
@@ -1488,15 +1488,15 @@ app.board = (function(){
 			stateMap.$selected_piece = null;
 		}
 	}
-	// /onClickStandPiece/I—¹
-	// ----------ƒCƒxƒ“ƒgƒnƒ“ƒhƒ‰I—¹----------------
-	// ----------ƒpƒuƒŠƒbƒvƒƒ\ƒbƒhŠJn--------------
-	// /reloadBoard/ŠJn
-	// –Ú“IF”Õ–Ê‚ÌÄ”z’u
-	// ˆø”F
-	//   recordMap ”Õ–Êó‘Ô‚ğ•\‚·ƒ}ƒbƒv
-	// –ß‚è’l true;
-	// —áŠO”­sF‚È‚µ
+	// /onClickStandPiece/çµ‚äº†
+	// ----------ã‚¤ãƒ™ãƒ³ãƒˆãƒãƒ³ãƒ‰ãƒ©çµ‚äº†----------------
+	// ----------ãƒ‘ãƒ–ãƒªãƒƒãƒ—ãƒ¡ã‚½ãƒƒãƒ‰é–‹å§‹--------------
+	// /reloadBoard/é–‹å§‹
+	// ç›®çš„ï¼šç›¤é¢ã®å†é…ç½®
+	// å¼•æ•°ï¼š
+	//   recordMap ç›¤é¢çŠ¶æ…‹ã‚’è¡¨ã™ãƒãƒƒãƒ—
+	// æˆ»ã‚Šå€¤ true;
+	// ä¾‹å¤–ç™ºè¡Œï¼šãªã—
 	reloadBoard = function(recordMap){
 		if (stateMap.$selected_piece){
 			stateMap.$selected_piece.css('background-color', '');
@@ -1512,14 +1512,14 @@ app.board = (function(){
 		
 		return true;
 	};
-	// /initModule/I—¹
+	// /initModule/çµ‚äº†
 	
-	// /initModule/ŠJn
-	// –Ú“IFƒ‚ƒWƒ…[ƒ‹‚Ì‰Šú‰»
-	// ˆø”F
-	//   $container ‚±‚Ì‹@”\‚ªg‚¤jQuery—v‘f
-	// –ß‚è’l true;
-	// —áŠO”­sF‚È‚µ
+	// /initModule/é–‹å§‹
+	// ç›®çš„ï¼šãƒ¢ã‚¸ãƒ¥ãƒ¼ãƒ«ã®åˆæœŸåŒ–
+	// å¼•æ•°ï¼š
+	//   $container ã“ã®æ©Ÿèƒ½ãŒä½¿ã†jQueryè¦ç´ 
+	// æˆ»ã‚Šå€¤ true;
+	// ä¾‹å¤–ç™ºè¡Œï¼šãªã—
 	initModule = function($container){
 		stateMap.$container = $container;
 		$container.html(configMap.main_html);
@@ -1531,12 +1531,12 @@ app.board = (function(){
 		
 		return true;
 	};
-	// /initModule/I—¹
+	// /initModule/çµ‚äº†
 	
 	
 	return {
 		initModule : initModule,
 		reloadBoard : reloadBoard
 	};
-	// ----------ƒpƒuƒŠƒbƒvƒƒ\ƒbƒhI—¹--------------
+	// ----------ãƒ‘ãƒ–ãƒªãƒƒãƒ—ãƒ¡ã‚½ãƒƒãƒ‰çµ‚äº†--------------
 }());

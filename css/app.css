@@ -2,7 +2,7 @@ body {
 	background-color : #cccccc;
 }
 
-/* app–¼‘O‹óŠÔƒZƒŒƒNƒ^ŠJn */
+/* appåå‰ç©ºé–“ã‚»ãƒ¬ã‚¯ã‚¿é–‹å§‹ */
 #app {
 	position : absolute;
 	top      : 8px;
@@ -14,10 +14,10 @@ body {
 	
 	background-color : #ffffff;
 }
-/* app–¼‘O‹óŠÔƒZƒŒƒNƒ^I—¹ */
+/* appåå‰ç©ºé–“ã‚»ãƒ¬ã‚¯ã‚¿çµ‚äº† */
 
-/* ƒ†[ƒeƒBƒŠƒeƒBƒZƒŒƒNƒ^ŠJn */
+/* ãƒ¦ãƒ¼ãƒ†ã‚£ãƒªãƒ†ã‚£ã‚»ãƒ¬ã‚¯ã‚¿é–‹å§‹ */
 .app-x-reverse{
 	transform : rotate(180deg);
 }
-/* ƒ†[ƒeƒBƒŠƒeƒBƒZƒŒƒNƒ^I—¹ */
+/* ãƒ¦ãƒ¼ãƒ†ã‚£ãƒªãƒ†ã‚£ã‚»ãƒ¬ã‚¯ã‚¿çµ‚äº† */

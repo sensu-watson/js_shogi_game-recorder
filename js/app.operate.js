@@ -1,16 +1,16 @@
 app.operate = (function(){
-	// ----------ƒ‚ƒWƒ…[ƒ‹ƒXƒR[ƒv•Ï”ŠJn----------
+	// ----------ãƒ¢ã‚¸ãƒ¥ãƒ¼ãƒ«ã‚¹ã‚³ãƒ¼ãƒ—å¤‰æ•°é–‹å§‹----------
 	var
 		configMap = {
 			main_html : String()
 				+ '<div class="app-operate-menu">'
-					+ '<div class="app-operate-prev app-normalbutton">–ß‚é</div>'
-					+ '<div class="app-operate-next app-normalbutton">i‚Ş</div>'
-					+ '<div class="app-operate-kifout app-normalbutton">kifo—Í</div>'
+					+ '<div class="app-operate-prev app-normalbutton">æˆ»ã‚‹</div>'
+					+ '<div class="app-operate-next app-normalbutton">é€²ã‚€</div>'
+					+ '<div class="app-operate-kifout app-normalbutton">kifå‡ºåŠ›</div>'
 				+ '</div>'
 				+ '<div class="app-operate-record">'
 					+ '<ul class="app-operate-record-kif">'
-						+ '<li>120A£‚R”ª‹â‰E•s¬</li>'
+						+ '<li>120ã€â–²ï¼“å…«éŠ€å³ä¸æˆ</li>'
 					+ '</ul>'
 				+'</div>'
 		},
@@ -18,16 +18,16 @@ app.operate = (function(){
 		jqueryMap = {},
 		
 		setJqueryMap, initModule;
-	// ----------ƒ‚ƒWƒ…[ƒ‹ƒXƒR[ƒv•Ï”I—¹----------
-	// ----------ƒ†[ƒeƒBƒŠƒeƒBƒƒ\ƒbƒhŠJn----------
-	// /bindOperateButton/ŠJn
+	// ----------ãƒ¢ã‚¸ãƒ¥ãƒ¼ãƒ«ã‚¹ã‚³ãƒ¼ãƒ—å¤‰æ•°çµ‚äº†----------
+	// ----------ãƒ¦ãƒ¼ãƒ†ã‚£ãƒªãƒ†ã‚£ãƒ¡ã‚½ãƒƒãƒ‰é–‹å§‹----------
+	// /bindOperateButton/é–‹å§‹
 	bindOperateButton = function(){
 		
 	}
 	
-	// ----------ƒ†[ƒeƒBƒŠƒeƒBƒƒ\ƒbƒhI—¹----------
-	// ----------DOMƒƒ\ƒbƒhŠJn---------------------
-	// /setJqueryMap/ŠJn
+	// ----------ãƒ¦ãƒ¼ãƒ†ã‚£ãƒªãƒ†ã‚£ãƒ¡ã‚½ãƒƒãƒ‰çµ‚äº†----------
+	// ----------DOMãƒ¡ã‚½ãƒƒãƒ‰é–‹å§‹---------------------
+	// /setJqueryMap/é–‹å§‹
 	setJqueryMap = function(){
 		var
 			$container = stateMap.$container,
@@ -45,10 +45,10 @@ app.operate = (function(){
 			$menu_kifout : $menu_kifout
 		};
 	};
-	// /setJqueryMap/I—¹
-	// ----------DOMƒƒ\ƒbƒhI—¹---------------------
-	// ----------ƒCƒxƒ“ƒgƒnƒ“ƒhƒ‰ŠJn----------------
-	// /onClickPrevButton/ŠJn
+	// /setJqueryMap/çµ‚äº†
+	// ----------DOMãƒ¡ã‚½ãƒƒãƒ‰çµ‚äº†---------------------
+	// ----------ã‚¤ãƒ™ãƒ³ãƒˆãƒãƒ³ãƒ‰ãƒ©é–‹å§‹----------------
+	// /onClickPrevButton/é–‹å§‹
 	onClickPrevButton = function(){
 		var
 			tesuu,
@@ -58,9 +58,9 @@ app.operate = (function(){
 		recordMap = app.data.getPosition(tesuu - 1);
 		app.board.reloadBoard(recordMap);
 	}
-	// /onClickPrevButton/I—¹
+	// /onClickPrevButton/çµ‚äº†
 	
-	// /onClickNextButton/ŠJn
+	// /onClickNextButton/é–‹å§‹
 	onClickNextButton = function(){
 		var
 			tesuu,
@@ -73,26 +73,26 @@ app.operate = (function(){
 			app.board.reloadBoard(recordMap);
 		}
 		else {
-			window.alert('ÅŒã‚Ìè‚Å‚·');
+			window.alert('æœ€å¾Œã®æ‰‹ã§ã™');
 		}
 	}
-	// /onClickNextButton/I—¹
+	// /onClickNextButton/çµ‚äº†
 	
-	// /onClickKifoutButton/ŠJn
+	// /onClickKifoutButton/é–‹å§‹
 	
 	
-	// /onClickKifoutButton/I—¹
+	// /onClickKifoutButton/çµ‚äº†
 	
-	// ----------ƒCƒxƒ“ƒgƒnƒ“ƒhƒ‰I—¹----------------
-	// ----------ƒpƒuƒŠƒbƒvƒƒ\ƒbƒhŠJn--------------
-	// /initModule/ŠJn
-	// –Ú“IFƒ‚ƒWƒ…[ƒ‹‚Ì‰Šú‰»
-	// ˆø”F
-	//   $container ‚±‚Ì‹@”\‚ªg‚¤jQuery—v‘f
-	// –ß‚è’l true;
-	// —áŠO”­sF‚È‚µ
+	// ----------ã‚¤ãƒ™ãƒ³ãƒˆãƒãƒ³ãƒ‰ãƒ©çµ‚äº†----------------
+	// ----------ãƒ‘ãƒ–ãƒªãƒƒãƒ—ãƒ¡ã‚½ãƒƒãƒ‰é–‹å§‹--------------
+	// /initModule/é–‹å§‹
+	// ç›®çš„ï¼šãƒ¢ã‚¸ãƒ¥ãƒ¼ãƒ«ã®åˆæœŸåŒ–
+	// å¼•æ•°ï¼š
+	//   $container ã“ã®æ©Ÿèƒ½ãŒä½¿ã†jQueryè¦ç´ 
+	// æˆ»ã‚Šå€¤ true;
+	// ä¾‹å¤–ç™ºè¡Œï¼šãªã—
 	initModule = function($container){
-		// HTML‚ğƒ[ƒh‚µAjQueryƒRƒŒƒNƒVƒ‡ƒ“‚ğƒ}ƒbƒsƒ“ƒO
+		// HTMLã‚’ãƒ­ãƒ¼ãƒ‰ã—ã€jQueryã‚³ãƒ¬ã‚¯ã‚·ãƒ§ãƒ³ã‚’ãƒãƒƒãƒ”ãƒ³ã‚°
 		stateMap.$container = $container;
 		$container.html(configMap.main_html);
 		setJqueryMap();
@@ -102,9 +102,9 @@ app.operate = (function(){
 		
 		return true;
 	}
-	// /initModule/I—¹
+	// /initModule/çµ‚äº†
 	
 	
 	return {initModule : initModule};
-	// ----------ƒpƒuƒŠƒbƒvƒƒ\ƒbƒhI—¹--------------
+	// ----------ãƒ‘ãƒ–ãƒªãƒƒãƒ—ãƒ¡ã‚½ãƒƒãƒ‰çµ‚äº†--------------
 }());

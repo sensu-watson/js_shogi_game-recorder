@@ -1,13 +1,13 @@
 # Shogi game recorder
-JavaScript�œ����������Ղł��B
+JavaScriptで動く棋譜取り盤です。
 
-�������i�ł����Agit�̕׋������˂ăA�b�v���[�h���܂����B
+未完成品ですが、gitの勉強を兼ねてアップロードしました。
 
-## �T�v
-Shogi game recorder�́AHTML���ɐ������������Ղ̏�ŋ�𓮂����A
-���̊��������B
-����������́A**CSA**�`���ŏo�͂���B
+## 概要
+Shogi game recorderは、HTML内に生成した将棋盤の上で駒を動かし、
+その棋譜を取る。
+取った棋譜は、**CSA**形式で出力する。
 
 
-## �摜
-�摜�t�@�C���͎���ł��B
+## 画像
+画像ファイルは自作です。
